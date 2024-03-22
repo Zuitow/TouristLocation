@@ -4,10 +4,11 @@ import Name from "../components/NameComponent";
 import Description from "../components/DescriptionComponent";
 import Adress from "../components/AdressComponent";
 import ImageComponent from "../components/ImageSourceComponent";
+import { estilosTu } from "../styles/Styless";
 
 export default function TouristPage() {
   return (
-    <View>
+    <View style={estilosTu.containerConteudo}>
       <Name name="Galatea" />
       <ImageComponent source={require("../assets/images/galatea.jpg")}/>
       <Description description="Galatea a cidade de Ouro, o local da Justiça contra os maculados." />
