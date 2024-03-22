@@ -9,10 +9,10 @@ import { estilosTu } from "../styles/Styless";
 export default function TouristPage() {
   return (
     <View style={estilosTu.containerConteudo}>
-      <Name name="Galatea" />
-      <ImageComponent source={require("../assets/images/galatea.jpg")}/>
-      <Description description="Galatea a cidade de Ouro, o local da Justiça contra os maculados." />
-      <Adress adress="A Localização de Galatea é desconhecido pelos comuns." />
+      <Name styleName={estilosTu.name} name="Galatea" />
+      <ImageComponent stylesImage={estilosTu.img} source={require("../assets/images/galatea.jpg")}/>
+      <Description styleDesc={estilosTu.description} description="Galatea a cidade de Ouro, o local da Justiça contra os maculados." />
+      <Adress styleAdd={estilosTu.adress} adress="A Localização de Galatea é desconhecido pelos comuns." />
 
     </View>
   );
