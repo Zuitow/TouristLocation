@@ -1,7 +1,8 @@
-import { Text } from "react-native";
+import { estilosTu } from "../styles/Styless";
+import { Image } from "react-native";
 
-export default function Description({ description }) {
+export default function ImageComponent({ source }) {
     return(
-        <Text>{description}</Text>
+        <Image source={source} style={{width: 500, height: 500}}/>
     )
 }
